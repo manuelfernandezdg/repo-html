@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Esta clase es sólo para referencia de colores */
+:root {
+    --color-negro:#07020D;
+    --color-blanco:#FFFFFF;
+    --color-blanco-2:#F1E9DB;
+    --color-acento:#5DB7DE;
+    --color-marron1:#A39B8B;
+    --color-marron2:#716A5C;
+
+    --contenedor-ancho: 1200px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    color: #07020D;
+    background-color: var(--color-blanco-2);
+    text-align: center;
+    margin: 0;
+}
+
+/* Redes */
+.redes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+
+a.redes_btn:link {
+    font-size: 32px;
+    text-decoration: none;
+    color: #07020D;
+}
+
+a.redes_btn:visited {
+    color: #07020D;
+}
+
+a.redes_btn:hover {
+    color: #5DB7DE;
+}
+
+a.redes_btn:active {
+    color: #5DB7DE;
+}
+
+/* tablas */
+table {
+    width: 950px;
+    text-align: center;
+    /* border-collapse: collapse; */
+}
+
+/* odd, impar, even, par */
+tr:nth-child(even) {
+    background-color: #716A5C;
+}
+
+tr:hover {
+    background-color: #5DB7DE;
+}
+
+th {
+    color: #5DB7DE;
+    background-color: #07020D;
+    padding: 16px;
+}
+
+td {
+    border:2px solid #07020D;
+    padding: 16px;
+}
+
+/* video e iframes */
+video {
+    width: 550px;
+    display: block; /* inline-block */
+    margin: 0 auto;
+}
+
+.mapa_google {
+    width: 1200px;
+    height: 550px;
+    border: none;
+}

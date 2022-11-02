@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+    <section>
+        <h1>Formularios</h1>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <label>
+                <span class="sr-only">Ingresa tu nombre:</span>
+                <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            </label>
+            
+            <label class="sr-only" for="apellido">Ingresa tu apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+
+            <label for="password">Ingresar Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingresar contraseña" required maxlength="12">
+
+            <input type="date" name="fecha">
+
+            <input type="number" name="edad">
+
+            <input type="email" name="email" placeholder="Ingresá tu email" required>
+
+            <label for="mensaje">Escribinos tu mensaje</label>
+
+            <textarea name="mensaje" id="mensaje" maxlength="250" placeholder="Máximo de 250 caracteres"></textarea>
+
+            <p>¿Te gustaría recibir novedades por email?</p>
+            <label>Si
+                <input type="radio" name="newsletter" value="si">
+            </label>
+            <label>No
+                <input type="radio" name="newsletter" value="no" checked>
+            </label>
+            <label>Tal vez
+                <input type="radio" name="newsletter" value="talvez">
+            </label>
+
+            <label>Comics
+                <input type="checkbox" name="favoritos1" value="Comics">
+            </label>
+
+            <label>Manga
+                <input type="checkbox" name="favoritos2" value="Manga">
+            </label>
+
+            <label>Ciencia Ficción
+                <input type="checkbox" name="favoritos3" value="Ciencia Ficción">
+            </label>
+
+            <label for="favoritos4">Fantasía
+                <input type="checkbox" name="favoritos4" value="Fantasía">
+            </label>
+
+            <label>Ingresar archivo
+                <input type="file" name="archivo">
+            </label>
+
+            <label>Provincia:
+                <select name="provincia" id="provincia" required>
+                    <option value="">Elegir Provincia</option>
+                    <option value="Córdoba valor">Córdoba (etiqueta)</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Santa Fé">Santa Fé</option>
+                </select>
+            </label>
+            <button>Ingresar</button>
+        </form>
+    </section>
+</body>
+</html>

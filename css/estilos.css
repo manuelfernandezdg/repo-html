@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Esta clase es sólo para referencia de colores */
+:root {
+    --color-negro:#07020D;
+    --color-blanco:#FFFFFF;
+    --color-blanco-2:#F1E9DB;
+    --color-acento:#5DB7DE;
+    --color-marron1:#A39B8B;
+    --color-marron2:#716A5C;
+
+    --contenedor-ancho: 1200px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    color: #07020D;
+    background-color: var(--color-blanco-2);
+
+    margin: 0;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Secciones */
+section {
+    text-align: center;
+    margin: 25px auto;
+    width: var(--contenedor-ancho);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header y Barra de Navegación */
+header {
+    background-color:#07020D;
+    text-align: center;
+
+    padding: 35px 0 20px;
+
+    border-bottom: 4px solid var(--color-acento); /* width style color */
+}
+
+.contenedor-header {
+    width: var(--contenedor-ancho); /* Ancho de la maqueta */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+    flex-direction: row; /* dirección de mi flex */
+    justify-content: center; /* para alinear los elementos siguiendo el eje principal */
+    align-items: stretch; /* para alinear los elementos del eje secundario */
+}
+
+/* Links de la navegación */
+a.nav-link:link, 
+a.nav-link:visited {
+    color: var(--color-blanco-2);
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+    color: var(--color-acento);
+}
+
+/* Formulario de búsqueda */
+.buscador {
+    display: flex;
+    justify-content: center;
+} 
+
+.buscador input {
+    padding: 8px 12px;
+    border: 3px solid var(--color-blanco-2);
+    border-right: none;
+    border-radius: 16px 0 0 16px;
+    outline: none;
+}
+
+.buscador input:focus {
+    border: 3px solid var(--color-acento);
+    border-right: none;
+}
+
+.buscador button {
+    padding: 8px 12px;
+    border: 3px solid var(--color-acento);
+    background-color: var(--color-acento);
+    border-radius: 0 16px 16px 0;
+}
+
+/* Bienvenida */
+#bienvenida {
+    background-image: url('../img/bienvenida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 250px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bienvenida h1 {
+    background-color: #07020dd5;
+    color: var(--color-blanco-2);
+    padding: 32px 0;
+}
+
+/* Novedades */
+.contenedor-novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px 0;
+}
+
+article {
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Estilos para los links de novedades */
+a.novedades:link,
+a.novedades:visited {
+    text-decoration: none;
+    border: 3px solid var(--color-acento);
+    color: #07020D;
+    padding: 12px 0;
+    border-radius: 16px;
+    display: block;
+}
+
+a.novedades:hover,
+a.novedades:active {
+    background-color: var(--color-acento);
+}
+
+/* Pié de Página */
+footer {
+    background-color: var(--color-marron2);
+    color: var(--color-blanco-2);
+    font-weight: 600;
+    text-align: center;
+
+    padding: 75px 0;
+}
+
+/* Detalle del producto */
+#detalle {
+    display: flex;
+    text-align: left;
+    gap: 32px;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 64px;
+}
+
+#detalle h1,
+#detalle h2,
+#detalle h3,
+#detalle p {
+    margin: 0;
+}
+
+#detalle h1 {
+    font-size: 26px;
+}
+
+#detalle h2,
+#detalle h3 {
+    font-size: 38px;
+}
+
+#detalle h3 {
+    font-weight: 600;
+}
+
+#detalle button {
+    font-size: 24px;
+    padding: 12px 16px;
+    border: 2px solid var(--color-acento);
+    border-radius: 16px;
+}
+
+#detalle button:hover {
+    background-color: var(--color-acento);
+    cursor: pointer;
+}
+
+aside {
+    font-style: italic;
+}
+
+#detalle img {
+    width: 350px;
+}
+
+.contenedor-detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 610px;
+    align-items: flex-start;
+}
+
+.recomendados {
+    font-size: 24px;
+    text-align: left;
+}
+
+/* Formularios Contacto / Log In / Registro */
+/* Login, Contacto, Registro */
+.formulario label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    display: block; /* agrega los saltos de línea*/
+    width: 450px; /* ancho */
+    margin: 15px auto; /* centra el elemento */
+
+    padding: 10px; /* área del texto */
+
+    border-radius: 0px;  /* ajuste del radio de las esquinas */
+    border: none;
+    border-bottom: 2px solid var(--color-marron2);
+
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border-bottom: 2px solid var(--color-acento);
+}
+
+.formulario textarea {
+    height: 200px;
+}
+
+.formulario .opciones {
+    display: inline-block; /* línea bloque, no tiene saltos de línea y el ancho del elemento es fijado por su contenido. */
+    width: auto;
+    margin: 5px;
+}
+
+.formulario .submit {
+    background-color: var(--color-acento);
+    font-weight: 700;
+    border: none;
+}

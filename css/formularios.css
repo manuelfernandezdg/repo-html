@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Custom properties */
+:root {
+    --color-negro: #2b1e3b;
+    --color-blanco: #F1E9DB;
+    --color-acento: #5DB7DE;
+    --color-marron-100: #A39B8B;
+    --color-marron-200: #716A5C;
+
+    --contenedor: 1300px; /* Ancho fijo  */
+
+    --tipografia: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: var(--tipografia);
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: fixed; /* Esto posiciona el elemento de manera fija en pantalla */
+    top: -4000px; /* Coordenadas desde el márgen superior */
+    left: -4000px; /* Coordenadas desde el márgen izquierdo */
+}
+
+/* Estilos generales */
+body {
+    color: var(--color-negro);
+    background-color: var(--color-blanco);
+
+    margin: 0;
+}
+
+.contenedor-header {
+    width: var(--contenedor);
+}
+
+section {
+    width: var(--contenedor);
+}
+
+input {
+    padding: 8px 12px;
+    border-radius: 16px;
+    outline: none;
+}
+
+input:focus {
+    background-color: #5DB7DE;
+}
+
+textarea {
+    padding: 16px;
+    outline: none;
+}
+
+textarea:focus {
+    background-color: #5DB7DE;
+}
+
+button {
+    padding: 8px 12px;
+    outline: none;
+    border: 8px solid #5DB7DE;
+    border-radius: 16px;
+}
+
+button:focus {
+    background-color: #5DB7DE;
+}
+
+button:hover {
+    background-color: #5DB7DE;
+    cursor: pointer;
+}
+
+p:hover {
+    background-color: #5DB7DE;
+}
+
+label {
+    display: block;
+}

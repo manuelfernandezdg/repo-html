@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- versión de HTML, 5 -->
+
+<html lang="es">
+<!-- html es la etiqueta principal, contiene todo nuestro código HTML y también es llamada etiqueta raíz. (root)-->
+
+<!-- head contiene información para el navegador y motores de búsqueda -->
+<head>
+    <meta charset="UTF-8">
+    <!-- mapa de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- retro compatible con IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- que el contenido tome el ancho del dispositivo, la escala inicial del contenido sea el 100% -->
+    
+    <title>Elementos en HTML y Trabajo con CSS</title>
+    <!-- Describe el contenido del documento. -->
+    
+    <link rel="stylesheet" href="css/elementos.css">
+    <!-- establecer una relación entre dos documentos: nuestro HTML y nuestra hoja de estilos. -->
+</head>
+
+<body>
+    <!-- header: titular. -->
+    <h1 class="content-box">Elementos en HTML y Trabajo con CSS - box-sizing: content-box</h1>
+    <h1 class="border-box">Elementos en HTML y Trabajo con CSS - box-sizing: border-box</h1>
+    <h2>Subtítulo</h2>
+    <h3>Bajada</h3>
+    <!-- Elementos de bloque: 1- ocupan el máximo de área permitida por su contenedor. 2- agregan saltos de línea antes y después. 3- pueden contener a otros elementos de bloque y también elementos de línea. -->
+    <p id="nav"><b class="color-azul">Lorem ipsum dolor sit amet</b>, consectetur adipisicing elit. Nobis mollitia <strong class="color-azul">Elementos en HTML</strong> qui delectus totam provident eum! <i>Quos nulla</i> perferendis voluptate <em class="color-rojo">consectetur facere at reiciendis</em>, omnis itaque hic ullam non.</p>
+    <!-- break o salto de línea -->
+    <a class="nav-link" title="Haciendo click en este link vas a poder visitar la sección de Estructura" href="estructura.html">Ver estructura</a>
+    
+    <a class="nav-link" title="Vas a salir de nuestra plataforma" target="_blank" href="https://discord.com/channels/859921242023133215/1026860433845530805">Sumate a nuestro servidor de Discord</a>
+    
+    <a class="nav-link" href="#descripcion">Ver descripción</a>
+    
+    <a class="nav-link" href="estructura.html#footer">Ver footer de estructura</a>
+    
+    <a class="nav-link" href="">Soy un Link</a>
+    
+    <a href="">Soy un Link</a>
+    <!-- Elementos de línea: 1- Ocupan el área de su contenido. 2-no agregan saltos de línea. 3- solamente pueden contener elementos de línea. -->
+    <!-- lista, unordered list, lista no enumerada-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!-- ordered list, lista numerada -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- línea-bloque, 1- ocupa el área de su contenido. 2-no agrega saltos de línea. 3- es que podemos editar su alto y ancho. -->
+    <a href="" title="" class="">
+        <img src="img/01.jpg" alt="Portada de: H.P. Lovecraft, Obras Completas.">
+    </a>
+    
+    <p><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo reiciendis quaerat veritatis est, fugiat fuga dolore quis, aspernatur inventore, iste quo quidem! Impedit, illo culpa libero dolorum quisquam fuga ab? </a></p>
+
+    <img src="img/02.jpg" alt="Portada de: Conan, Crónicas Completas">
+
+    <!-- ¿y los div? -->
+    <!-- div es un elemento de bloque. Y no tiene peso semántico.-->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum nam ipsam? Recusandae quam eligendi libero obcaecati cupiditate quod aliquid possimus, neque laboriosam in, dignissimos ab esse nostrum, error laudantium.
+    </div>
+
+    <p id="descripcion" class="parrafo-descripcion">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro excepturi eveniet repellendus, numquam quod fugiat expedita ea libero veritatis asperiores, cumque nam, ex dolore tempora assumenda modi quas! Deserunt, neque?<span>Soy un span</span> <a href="#nav">Volver a la navegación</a>
+    </p>
+
+    <a href="">
+        <span>Icono</span> -texto
+    </a>
+    
+    <span>Soy un span</span>
+    <span>Soy un span</span>
+    <span>Soy un span</span>
+
+</body>
+</html>

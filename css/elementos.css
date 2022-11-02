@@ -1,0 +1,101 @@
+/* Hoja de estilos */
+/* Familia tipográfica */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Selector de etiqueta */
+/* Los usamos frecuentemente para establecer estilos globales */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px; /* Tamaño del cuerpo de la tipo */
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Estilos de los links */
+/* Reposo */
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Cursor por encima */
+a:hover,
+a:active {
+    color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: circle;
+}
+
+/* Selector de clase */
+/* Links de la barra de navegación */
+a.nav-link:link,
+a.nav-link:visited {
+    font-weight: 600;
+    color: brown;
+}
+
+a.nav-link:hover,
+a.nav-link:active {
+    color: blue;
+}
+
+/* Identificar dos párrafos */
+.color-rojo {
+    color: red;
+}
+
+.color-azul {
+    color: blue;
+}
+
+/* 
+img {
+    display: block;
+    width: 100%;
+} */
+
+/* Modelo de caja */
+h1 {
+    background-color: rgb(36, 36, 36);
+    height: 250px; /* Define el alto del elemento en pantalla */
+    width: 650px; /* Define el ancho del elemento */
+    padding: 16px;
+    margin: 32px;
+}
+
+.content-box {
+    color: rgb(135, 36, 80);
+    box-sizing: content-box; /* suma al tamaño final del elemento el padding y los bordes */
+    border: 5px solid rgb(135, 36, 80);
+}
+
+.border-box {
+    color: rgb(49, 89, 163);
+    box-sizing: border-box;
+    border: 5px solid rgb(49, 89, 163);
+}
+
+a {
+    width: 650px;
+    height: 250px;
+    background-color: rgb(104, 104, 104);
+    line-height: 64px; /* alto del renglón o interlínea */
+    padding: 16px;
+    margin: 16px;
+}
